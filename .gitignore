@@ -1,1 +1,9 @@
 .idea
+checkpoint
+cmds.txt
+*model.data*
+*model.index
+*model.meta
+trainingData.npy
+log/
+__pycache__
