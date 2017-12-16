@@ -16,6 +16,7 @@ def alexnet2(width, height, output):
     network = conv_2d(network, 256, 5, activation='relu')
     network = max_pool_2d(network, 3, strides=2)
     network = local_response_normalization(network)
+
     network = conv_2d(network, 384, 3, activation='relu')
     network = conv_2d(network, 384, 3, activation='relu')
     network = conv_2d(network, 256, 3, activation='relu')

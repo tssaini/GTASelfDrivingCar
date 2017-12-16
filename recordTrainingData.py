@@ -76,10 +76,10 @@ if __name__ == "__main__":
                 np.save(fileName, trainingData)
                 print('SAVED')
 
-            #cv2.imshow('window', screen)
-            #if cv2.waitKey(25) & 0xFF == ord('q'):
-            #    cv2.destroyAllWindows()
-            #    break
+            cv2.imshow('window', screen)
+            if cv2.waitKey(25) & 0xFF == ord('q'):
+                cv2.destroyAllWindows()
+                break
 
             #print('loop took {} seconds'.format(time.time() - last_time))
             last_time = time()
